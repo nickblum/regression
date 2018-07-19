@@ -4,7 +4,6 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-#df = pd.io.excel.read_excel("sr27abxl/ABBREV.xlsx")
 df = pd.read_csv("sr27abxl/ABBREV.csv")
 
 df_poly_chol = df[['FA_Poly_(g)','Cholestrl_(mg)']]
