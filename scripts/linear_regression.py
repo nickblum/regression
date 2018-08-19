@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import linregress
 
 #Get all dairy items from dataset. Note: Dairy codes are in the 1000's range
-df = pd.read_csv("sr27abxl/ABBREV.csv").query('1000 <= NDB_No < 1999').dropna()
+df = pd.read_csv("regression/ABBREV.csv").query('1000 <= NDB_No < 1999').dropna()
 
 # open graph, plot data points
 sns.set_style("darkgrid")
