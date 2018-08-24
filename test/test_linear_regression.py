@@ -4,8 +4,11 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from scipy.stats import linregress
+import regression.regression.linear_regression as lr
 
-#Get all dairy items from dataset. Note: Dairy codes are in the 1000's range
+lr.find_curve()
+
+"""#Get all dairy items from dataset. Note: Dairy codes are in the 1000's range
 df = pd.read_csv("regression/datasets/USDA_nutrient.csv").query('1000 <= NDB_No < 1999').dropna()
 
 # open graph, plot data points
@@ -26,4 +29,4 @@ Y_plot = 20*X_plot+30
 plt.plot(X_plot, Y_plot, color='r')
 
 
-plt.show()
+plt.show()"""
